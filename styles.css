@@ -1,24 +1,21 @@
+/* Import the same font */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
 :root {
-    --bg-dark: #1e1c1a;
-    --bg-light: #f4ede6;
-    --text-dark: #fff;
-    --text-light: #2e2b27;
-    --accent: #a87c4f; /* Earthy brown */
+    --bg: #f4f1ee; /* Light beige */
+    --text: #1d1d1d; /* Dark text */
+    --button-bg: #1d1d1d;
+    --button-text: #ffffff;
+    --hover-bg: #444;
 }
 
 body {
-    background: var(--bg-dark);
-    color: var(--text-dark);
-    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Space Mono', monospace;
     text-align: center;
-    transition: background 0.3s, color 0.3s;
-    padding: 0;
     margin: 0;
-}
-
-.light-mode {
-    background: var(--bg-light);
-    color: var(--text-light);
+    padding: 0;
 }
 
 nav {
@@ -27,33 +24,45 @@ nav {
     gap: 20px;
     padding: 20px;
     font-size: 18px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text);
+    text-transform: uppercase;
+    font-size: 16px;
 }
 
 .hero {
-    margin-top: 10vh;
+    margin-top: 20vh;
 }
 
 h1 {
     font-size: 3rem;
-    font-weight: 600;
-    margin-bottom: 10px;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
 p {
     font-size: 1.2rem;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
-.cta-button {
+.button {
     display: inline-block;
     margin-top: 20px;
     padding: 10px 20px;
-    background: var(--accent);
-    color: white;
+    background: var(--button-bg);
+    color: var(--button-text);
     text-decoration: none;
-    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid var(--button-bg);
+    transition: background 0.3s, color 0.3s;
 }
 
-.light-mode .cta-button {
-    background: #5c4937;
+.button:hover {
+    background: var(--hover-bg);
+    color: #fff;
 }
