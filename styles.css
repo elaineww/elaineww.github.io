@@ -1,0 +1,59 @@
+:root {
+    --bg-dark: #1e1c1a;
+    --bg-light: #f4ede6;
+    --text-dark: #fff;
+    --text-light: #2e2b27;
+    --accent: #a87c4f; /* Earthy brown */
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+.light-mode {
+    background-color: var(--bg-light);
+    color: var(--text-light);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: var(--accent);
+    color: white;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+}
+
+.cta-button {
+    background: var(--accent);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.light-mode .cta-button {
+    background: #5c4937;
+}
